@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111716">
+  <meta name="description" content="PXL Seq by Pixel Records. A native macOS MIDI sequencer for evolving basslines, arpeggios and AAAB phrases. AU and VST3, private beta.">
+  <meta property="og:title" content="PXL Seq / Pixel Records">
+  <meta property="og:description" content="A little repetition. A different ending. Native MIDI sequencing for macOS.">
+  <meta property="og:image" content="https://tomislavrupic.github.io/PXL-Seq/assets/pxl-seq.png">
+  <meta property="og:url" content="https://tomislavrupic.github.io/PXL-Seq/">
+  <link rel="canonical" href="https://tomislavrupic.github.io/PXL-Seq/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>PXL Seq / Pixel Records</title>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav wrap">
+  <a class="brand" href="https://tomislav-rupic.com/" aria-label="Pixel Records home"><span class="mark" aria-hidden="true">PXL</span><span>PIXEL RECORDS</span></a>
+  <nav aria-label="Main navigation"><a href="#instrument">Instrument</a><a href="#setup">Setup</a><a href="https://tomislav-rupic.com/">The universe <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main id="main">
+  <section class="hero wrap" aria-labelledby="title">
+    <div class="eyebrow"><span class="signal"></span> MIDI SEQUENCER / MACOS / 0.4.0 BETA</div>
+    <h1 id="title">PXL Seq<span class="title-dot">.</span></h1>
+    <div class="hero-bottom"><p>A little repetition.<br>A different ending.</p><a class="primary" href="#instrument">Meet the sequencer <span aria-hidden="true">↓</span></a></div>
+    <div class="phrase" aria-label="Interactive AAAB phrase visualisation">
+      <div class="phrase-top"><span>PHRASE / <strong id="phrase-name">A → A → A → B</strong></span><button id="play" class="icon" aria-label="Play phrase visualization" title="Play phrase visualization">▶</button><output id="position" aria-live="off">01 / 32</output></div>
+      <div id="phrase-grid" class="phrase-grid" aria-hidden="true"></div>
+      <div class="phrase-labels" aria-hidden="true"><span>A / 01—08</span><span>A / 01—08</span><span>A / 01—08</span><span>B / 09—16</span></div>
+    </div>
+    <div class="hero-meta"><span>AU INSTRUMENT + AU MIDI FX + VST3</span><span>MIDI OUT. YOUR SOUND.</span></div>
+  </section>
+  <section id="instrument" class="instrument">
+    <div class="wrap section-intro"><span class="eyebrow">01 / THE INSTRUMENT</span><h2>Small patterns.<br>Long conversations.</h2><p>Generate a phrase. Find its character. Let it move. PXL Seq turns sixteen steps into evolving MIDI for your synths, samplers and hardware.</p></div>
+    <figure class="interface wrap"><a href="assets/pxl-seq.png" target="_blank" rel="noopener" aria-label="Open full-resolution PXL Seq interface"><img src="assets/pxl-seq.png" width="2000" height="1820" alt="PXL Seq 0.4.0 interface with editable note, velocity, gate and octave lanes, modulation controls and a virtual MIDI output"></a><figcaption><span>PXL SEQ / ACTUAL PLUGIN INTERFACE</span><span>0.4.0 · PRIVATE BETA</span></figcaption></figure>
+    <div class="features wrap"><article><span class="index">01</span><h3>Four ways in.</h3><p>v1, v2, Arp and Bass generators. Sixteen stored banks, a selectable chord and editable note, velocity, gate and octave lanes.</p></article><article><span class="index">02</span><h3>Movement, not noise.</h3><p>Swing, ties, jitter and polyrhythmic resets. Modulate the pattern with velocity, CC74 and pressure, or let Type and Density wander.</p></article><article><span class="index">03</span><h3>Your instruments.</h3><p>Send MIDI to software or hardware. The AU instrument adds a dedicated virtual MIDI port for Ableton Live. Export a phrase as a MIDI file.</p></article></div>
+  </section>
+  <section class="aaab wrap" aria-labelledby="aaab-title"><div><span class="eyebrow">02 / BREAK THE LOOP</span><h2 id="aaab-title">AAAB.<br><span>Again. Again.<br>Then elsewhere.</span></h2></div><div class="aaab-details"><div class="letters" aria-hidden="true"><span>A</span><span>A</span><span>A</span><span>B</span></div><p>With sixteen steps, the first eight play three times. The last eight play once. A 32-step phrase, with a turn at the end.</p><div class="equation"><span>01—08</span><span>× 3</span><span>09—16</span><span>× 1</span></div><p class="muted">Forward and Backward modes are there too. AAAB never reverses the notes.</p></div></section>
+  <section id="setup" class="setup"><div class="wrap"><div class="section-intro"><span class="eyebrow">03 / MAKE THE CONNECTION</span><h2>One sequencer.<br>Your whole studio.</h2></div><div class="setup-grid"><div><h3>AU in Ableton Live</h3><ol><li>Load <strong>AU → Pixel Records → PXL Seq</strong> on a MIDI track. Set Monitor to In.</li><li>Leave Virtual MIDI on. In Live's MIDI settings, enable Track for the displayed PXL Seq input port.</li><li>On another track, select that exact virtual port as MIDI From, set Monitor to In, and load your instrument.</li><li>Start the transport. Record the receiving MIDI track in real time before exporting audio.</li></ol><p class="note">Keep MIDI Input off unless using a physical controller. Avoid All Ins on the source track: its own port must not loop back in.</p></div><div class="formats"><h3>Choose your route</h3><div><strong>AU instrument</strong><span>Virtual MIDI output for Live</span></div><div><strong>AU MIDI FX</strong><span>Native MIDI FX slot, including Logic Pro</span></div><div><strong>VST3</strong><span>Host-native MIDI routing</span></div><p class="muted">Apple Silicon · macOS 12+<br>MIDI generator, not a synthesizer. No Max required.</p></div></div></div></section>
+  <section id="beta" class="beta wrap"><span class="eyebrow">04 / IN DEVELOPMENT</span><h2>Next stop:<br>your next sequence.</h2><div class="beta-bottom"><div><p>PXL Seq 0.4.0 is in private beta.</p><p class="muted">Public downloads are pending distribution clearance.<br>The current build is ad-hoc signed and not notarized.</p></div><a class="primary" href="https://tomislav-rupic.com/">Explore Pixel Records <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="wrap"><a class="brand" href="https://tomislav-rupic.com/">PXL / PIXEL RECORDS</a><span>Made by Tomislav Rupić</span><a href="https://github.com/tomislavrupic/PXL-Seq">Site on GitHub ↗</a><p>PXL Seq grew from experiments with the Sting Max for Live sequencer. This is an independent native project, not an official Sting release.</p><span>© 2026 Pixel Records</span></footer>
+<script src="script.js" defer></script>
+</body>
+</html>
