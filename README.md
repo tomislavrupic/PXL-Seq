@@ -12,6 +12,8 @@ not plugin source or binaries. Public plugin downloads are pending distribution
 clearance. The current private beta is ad-hoc signed, not notarized.
 
 The phrase visualization is silent and illustrative, not the plugin engine.
+The page labels this beside the preview and shows private-beta availability
+near the top. Instrument, Setup and Release links remain available on mobile.
 
 The 0.5.0 images show the native Performance and Edit views and a desktop WebKit
 capture of the Safari controller connected to the installed AU. The controller

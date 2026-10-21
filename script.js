@@ -12,18 +12,19 @@ const steps = sequence.map((height, index) => {
 });
 let current = 0;
 let timer = null;
+play.disabled = false;
 function stop() {
   clearInterval(timer);
   timer = null;
   play.textContent = '▶';
-  play.setAttribute('aria-label', 'Play phrase visualization');
-  play.title = 'Play phrase visualization';
+  play.setAttribute('aria-label', 'Play silent phrase visualization');
+  play.title = 'Play silent phrase visualization';
 }
 play.addEventListener('click', () => {
   if (timer !== null) return stop();
   play.textContent = 'Ⅱ';
-  play.setAttribute('aria-label', 'Pause phrase visualization');
-  play.title = 'Pause phrase visualization';
+  play.setAttribute('aria-label', 'Pause silent phrase visualization');
+  play.title = 'Pause silent phrase visualization';
   timer = setInterval(() => {
     steps[current].classList.remove('active');
     current = (current + 1) % steps.length;

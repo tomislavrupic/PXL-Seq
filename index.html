@@ -18,17 +18,20 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav wrap">
   <a class="brand" href="https://tomislav-rupic.com/" aria-label="Pixel Records home"><span class="mark" aria-hidden="true">PXL</span><span>PIXEL RECORDS</span></a>
-  <nav aria-label="Main navigation"><a href="#instrument">Instrument</a><a href="#setup">Setup</a><a href="https://tomislav-rupic.com/">The universe <span aria-hidden="true">↗</span></a></nav>
+  <nav aria-label="Main navigation"><a href="#instrument">Instrument</a><a href="#setup">Setup</a><a href="#beta">Release</a><a href="https://tomislav-rupic.com/">The universe <span aria-hidden="true">↗</span></a></nav>
 </header>
 <main id="main">
   <section class="hero wrap" aria-labelledby="title">
     <div class="eyebrow"><span class="signal"></span> MIDI SEQUENCER / MACOS / 0.5.0 BETA</div>
     <h1 id="title">PXL Seq<span class="title-dot">.</span></h1>
     <div class="hero-bottom"><p>A little repetition.<br>A different ending.</p><a class="primary" href="#instrument">Meet the sequencer <span aria-hidden="true">↓</span></a></div>
-    <div class="phrase" aria-label="Interactive AAAB phrase visualisation">
-      <div class="phrase-top"><span>PHRASE / <strong id="phrase-name">A → A → A → B</strong></span><button id="play" class="icon" aria-label="Play phrase visualization" title="Play phrase visualization">▶</button><output id="position" aria-live="off">01 / 32</output></div>
+    <div class="release-notice"><p><strong>Private beta.</strong> Public download is not available yet.</p><a href="#beta">Release status <span aria-hidden="true">↘</span></a></div>
+    <div class="phrase" role="group" aria-label="Interactive AAAB phrase visualization" aria-describedby="phrase-note">
+      <div class="phrase-top"><span>PHRASE / <strong id="phrase-name">A → A → A → B</strong></span><button id="play" class="icon" type="button" aria-label="Play silent phrase visualization" title="Play silent phrase visualization" aria-controls="phrase-grid" disabled>▶</button><output id="position" aria-live="off">01 / 32</output></div>
       <div id="phrase-grid" class="phrase-grid" aria-hidden="true"></div>
       <div class="phrase-labels" aria-hidden="true"><span>A / 01—08</span><span>A / 01—08</span><span>A / 01—08</span><span>B / 09—16</span></div>
+      <p id="phrase-note" class="phrase-note">Silent phrase preview. This illustration shows the AAAB structure; it does not generate audio.</p>
+      <noscript><p class="phrase-note">Enable JavaScript to animate the phrase preview. The product images and setup guide work without it.</p></noscript>
     </div>
     <div class="hero-meta"><span>AU INSTRUMENT + AU MIDI FX + VST3</span><span>MIDI OUT. YOUR SOUND.</span></div>
   </section>
