@@ -14,3 +14,5 @@
   .nav nav{width:100%;justify-content:space-between;flex-wrap:wrap;gap:0 12px;font-size:12px}
   .release-notice{padding:12px 14px;gap:0 16px}
 }
+
+.brand-icon{display:block;width:44px;height:44px;border-radius:8px}.hero-heading{display:flex;align-items:center;gap:28px}.product-icon{display:block;width:128px;height:128px;flex:none;border-radius:8px}@media(max-width:800px){.hero-heading{gap:20px}.product-icon{width:88px;height:88px}}@media(max-width:450px){.hero-heading{gap:12px}.hero-heading h1{font-size:56px}.product-icon{width:52px;height:52px}.brand-icon{width:36px;height:36px}}
