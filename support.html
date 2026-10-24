@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Setup, pairing and troubleshooting for the PXL Seq iPad controller.">
+  <meta name="theme-color" content="#111716">
+  <link rel="icon" href="assets/pxl-seq-icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="legal.css">
+  <title>PXL Seq Support / Pixel Records</title>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav wrap"><a class="brand" href="index.html"><img class="brand-icon" src="assets/pxl-seq-icon.png" width="44" height="44" alt=""><span>PXL SEQ / PIXEL RECORDS</span></a><nav aria-label="Main navigation"><a href="privacy.html">Privacy</a><a href="index.html">PXL Seq</a></nav></header>
+<main id="main" class="document wrap">
+  <span class="eyebrow">PXL SEQ / SUPPORT</span>
+  <h1>Keep the music moving.</h1>
+  <p class="updated">Last updated 24 October 2026.</p>
+  <aside class="review-note"><p>Private beta. The iPad app needs the compatible Mac instrument and controller companion. Public Mac downloads remain unavailable pending distribution clearance.</p></aside>
+  <p>PXL Seq for iPad is a controller, not an iPad synthesizer or Audio Unit. The Mac runs the sequencer and sends MIDI to your instruments.</p>
+  <h2>Requirements</h2>
+  <ul><li>iPadOS 17 or later.</li><li>A compatible PXL Seq Mac instrument and running controller companion, supplied separately to approved testers.</li><li>Tailscale connected on both devices and access to the intended private network.</li><li>A synth, sampler or MIDI destination configured on the Mac for sound.</li></ul>
+  <h2>Pair your Mac</h2>
+  <ol><li>Open the instrument and controller companion on your Mac.</li><li>On the Mac, open <code>http://127.0.0.1:18087/</code> to display its private pairing code.</li><li>On iPad, choose Pair Mac. Scan the QR code or paste its private HTTPS link.</li><li>If multiple instances appear, select the one you intend to control.</li><li>Check Connected status and test a control. USB is not required for normal control.</li></ol>
+  <p>Do not enter <code>127.0.0.1</code> as the iPad's Mac endpoint: it points back to the iPad. Use the private HTTPS link from the Mac's pairing page. Do not post that link in screenshots or bug reports.</p>
+  <h2>No connection</h2>
+  <p>Check Tailscale on both devices and confirm the Mac instrument and companion are running. If access was revoked, pair again. Do not disable certificate validation, expose the studio endpoint publicly or forward router ports to solve pairing problems.</p>
+  <p>Pending commands are discarded on disconnection rather than replayed after reconnecting. The Mac can keep playing when the iPad sleeps or disconnects. Use the Mac transport if the controller is offline; the iPad's Panic cannot reach a disconnected Mac.</p>
+  <h2>Connected but silent</h2>
+  <p>Check the Mac transport, layer enable switches, MIDI channel and destination, receiving instrument and track monitoring. The iPad sends control messages, not audio. Moving graphics are not proof of audible MIDI. Avoid feeding the sequencer's MIDI output back into its input.</p>
+  <h2>Forget a Mac or lost controller</h2>
+  <p>Open Pair Mac &gt; Forget Mac to remove the saved iPad pairing, including offline. An error is shown if removal fails. For a lost iPad, revoke controller access from the Mac companion pairing page. Do not rely on uninstalling the app alone to remove Keychain credentials.</p>
+  <p>Unpairing leaves your Mac compositions and exported files intact. Optional camera access can be disabled in iPad Settings; paste the pairing link instead.</p>
+  <h2>Report a problem</h2>
+  <p>Email <a href="mailto:info@tomislav-rupic.com">info@tomislav-rupic.com</a> or use TestFlight's Send Beta Feedback. Include app version/build, iPad model and iPadOS version, Mac version, the view you were using and steps to reproduce.</p>
+  <p>Remove pairing links, QR codes, credentials and private compositions from attachments. Do not send a whole project unless deliberately requested and you have permission to share it. This support address is not a marketing signup.</p>
+  <nav class="legal-nav" aria-label="Related pages"><a href="index.html">PXL Seq</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a></nav>
+</main>
+</body>
+</html>
